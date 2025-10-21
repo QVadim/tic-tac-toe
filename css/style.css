@@ -1,0 +1,161 @@
+body {
+  background: #c5c5c5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+title,
+.block,
+.tabel-resault,
+.tabel-resaults {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Форма входа */
+
+.block-form {
+  max-width: 450px;
+  min-height: 250px;
+  border: 5px double rgb(49, 129, 24);
+  border-radius: 4%;
+  padding: 5px;
+  margin: 50px;
+  background: rgb(151, 159, 180);
+  height: 100%;
+}
+
+.block-form__text {
+  font-size: 18px;
+}
+
+.block-form__input {
+  padding: 5px;
+  background: rgb(164, 174, 198);
+}
+
+.button {
+  padding: 10px;
+  margin: 10px;
+  background: rgb(70, 186, 128);
+  border: 2px solid green;
+  border-radius: 5%;
+  font-size: 18px;
+}
+
+.button:active {
+  background: rgb(129, 175, 152);
+}
+
+.block-form__error {
+  color: rgb(169, 20, 20);
+  font-size: 18px;
+  display: none;
+}
+
+.block-form__error {
+  color: rgb(169, 20, 20);
+  font-size: 18px;
+  display: none;
+}
+
+.block-form__error {
+  color: rgb(169, 20, 20);
+  font-size: 18px;
+  display: none;
+}
+
+/* Имена игроков */
+
+.name-gamers {
+  margin: 10px;
+  padding: 10px;
+}
+
+.name-gamers__one,
+.name-gamers__two {
+  font-size: 16px;
+  border: 2px solid black;
+  margin: 5px;
+  font-weight: 600;
+  padding: 6px;
+  color: rgb(49, 129, 24);
+}
+
+/*  Блок игры в Крестики нолики */
+
+.block-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.block {
+  width: 250px;
+  height: 250px;
+  border: 5px double rgb(49, 129, 24);
+  border-radius: 4%;
+  padding: 5px;
+  margin: 5px;
+}
+
+.block7,
+.block8,
+.block9,
+.block6,
+.block5,
+.block4,
+.block3,
+.block2,
+.block1 {
+  width: 70px;
+  height: 70px;
+  margin: 6px;
+  background: blueviolet;
+  border-radius: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: greenyellow;
+}
+
+/* tabel */
+
+.tabel {
+  display: none;
+  max-width: 600px;
+  max-height: 100%;
+}
+
+.tabel-resaults,
+.tabel-resault {
+  gap: 20px;
+  border: 1px solid black;
+}
+
+.tabel-resault__elem {
+  flex: 1;
+  text-align: center;
+}
+
+.block__newgame {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 320px) {
+  .button,
+  .tabel-resault__elem,
+  .title {
+    font-size: 14px;
+  }
+}

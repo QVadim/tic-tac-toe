@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="title">Крестики - нолики</h1>
+    <!-- Форма входа -->
+    <main>
+      <center>
+        <div id="form" class="block-form">
+          <form action="">
+            <p class="block-form__text">Введите имя 1 игрока</p>
+            <input id="player1-form" class="block-form__input" type="text" />
+            <p class="block-form__text">Введите имя 2 игрока</p>
+            <input id="player2-form" class="block-form__input" type="text" />
+            <br />
+            <br />
+            <button
+              onclick="{buttonStart}"
+              id="button-form"
+              class="block-form__button button"
+            >
+              Начать игру
+            </button>
+            <p id="block-form__limit" class="block-form__error">
+              У вас привышен лимит в 50 символов
+            </p>
+            <p id="block-error__double" class="block-form__error">
+              имена не могут быть одинаковые
+            </p>
+            <p id="block-error__zero" class="block-form__error">Введите имя</p>
+          </form>
+        </div>
+      </center>
+
+      <!-- Блок игры в Крестики нолики -->
+
+      <div class="block-center">
+        <div class="name-gamers">
+          <p id="player1-name" class="name-gamers__one">Игрок 1 -</p>
+          <p id="player2-name" class="name-gamers__two">Игрок 2 -</p>
+        </div>
+        <center>
+          <p id="currentPlayer">Ходит: [Имя игрока]</p>
+        </center>
+        <div class="block">
+          <div class="block1 game-cell" data-row="0" data-col="0"></div>
+          <div class="block2 game-cell" data-row="0" data-col="1"></div>
+          <div class="block3 game-cell" data-row="0" data-col="2"></div>
+          <div class="block4 game-cell" data-row="1" data-col="0"></div>
+          <div class="block5 game-cell" data-row="1" data-col="1"></div>
+          <div class="block6 game-cell" data-row="1" data-col="2"></div>
+          <div class="block7 game-cell" data-row="2" data-col="0"></div>
+          <div class="block8 game-cell" data-row="2" data-col="1"></div>
+          <div class="block9 game-cell" data-row="2" data-col="2"></div>
+        </div>
+      </div>
+
+      <!-- Таблица результатов -->
+      <center>
+        <div id="tabel" class="tabel">
+          <div class="block__newgame">
+            <button id="startGames" onclick="`${startGames}`" class="button">
+              Новая Игра
+            </button>
+            <button id="againGame" onclick="`${newGames}`" class="button">
+              Начать заново
+            </button>
+          </div>
+          <div class="tabel-resaults">
+            <p id="namePlayer" class="tabel-resault__elem">Имя игрока</p>
+            <p class="tabel-resault__elem">Побед</p>
+            <p class="tabel-resault__elem">Поражений</p>
+            <p class="tabel-resault__elem">Ничья</p>
+          </div>
+        </div>
+      </center>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
